@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #262728;
+  overflow-x: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	padding: 0 19% 0 19%;
+	width: 62%;
+	height: 8vh;
+	background: #262728;
+	box-shadow: 0 3px 0 0 rgba(0,0,0,.08);
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+
+	color: rgb(140,140,140);
+}
+
+.nav .title {
+	width: 50%;
+}
+
+.nav .buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+	width: 50%;
+}
+
+.btn {
+	background: none;
+    border: none;
+    outline: none;
+    color: rgb(140,140,140);
+    height: 4vh;
+    width: 3vw;
+    cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.headerbar-container {
+	height: 22vh;
+	width: 62%;
+	background: #1d1e1f;
+    padding: 8vh 19vw 0 19vw;
+    color: #7d7e7f;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: lighter;
+}
+
+.headerbar {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.headerbar h1 {
+	margin: 0px;
+	color: rgb(200,200,200);
+	font-size: 6vh;
+	font-weight: lighter;
+}
+
+.concertlist-container {
+	width: 62%;
+	padding: 0 19% 0 19%;
+}
+
+.concertlist {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.concert-wrapper {
+	width: 23%;
+	height: 52.5vh;
+}
+
+.concert {
+	/*transition: all 300ms ease;*/
+	background: #1d1e1f;
+	color: #7d7e7f;
+	height: 44vh;
+}
+
+.concert img {
+	display: block;
+	max-height: 100%;
+	height: 100%;
+	margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.concert-img-wrapper {
+
+	width: 100%;
+	height: 62%;
+	border-bottom: rgb(20,20,20) solid 10px;
+
+	overflow: hidden;
+}
+
+.concert-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 27%;
+	margin: 10px;
+}
+
+.concert-info-wrapper p {
+	padding: 0px;
+	margin: 0px;
+}
+
+.concert-performer {
+	font-size: 92%;
+	color: rgb(180,180,180);
+}
+
+.concert-venue, .concert-date {
+	font-size: 82%;
+}
+
+.concert-spacing {
+	margin-top: 6vh;
+	margin-bottom: 2.5vh;
+	height: 0px;
+	border-top: 1px rgba(100,100,100,0.4) solid;
+}
+
+/* ------------------------ */
+
+.footer {
+	height: 20vh;
+}
+
+::selection {
+  background: rgb(190,190,190); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: rgb(190,190,190); /* Gecko Browsers */
+}
